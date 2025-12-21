@@ -1,0 +1,16 @@
+:root {
+    --home-button-bg: #f3f4f6;          /* light mode button */
+}
+
+[data-theme="dark"] {
+    --home-button-bg: #9911ff;          /* dark mode button */
+}
+
+.home-button {
+    background-color: var(--home-button-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}

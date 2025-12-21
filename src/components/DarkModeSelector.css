@@ -1,0 +1,45 @@
+:root {
+    --toggle-bg: #e5e7eb;          /* light mode container */
+    --toggle-handle: #ffffff;     /* light mode handle */
+}
+
+[data-theme="dark"] {
+    --toggle-bg: #222222;          /* dark mode container */
+    --toggle-handle: #9911ff;     /* dark mode handle */
+}
+
+.transition-bg {
+    transition: background-color 0.5ms ease, color 0.5ms ease;
+}
+
+.toggle-container {
+    all: unset;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    background-color: var(--toggle-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.toggle-container.start {
+    justify-content: flex-start;
+}
+
+.toggle-container.end {
+    justify-content: flex-end;
+}
+
+.toggle-handle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--toggle-handle);
+    border-radius: 50%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

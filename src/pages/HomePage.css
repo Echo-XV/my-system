@@ -1,0 +1,11 @@
+:root {
+    --toggle-bg-left: #fcf8e2;          /* light mode container */
+    --toggle-bg-right: #f587a2;         /* light mode container */
+    --toggle-text: #2c2c23;        /* light mode text */
+}
+
+[data-theme="dark"] {
+    --toggle-bg-left: #222222;          /* dark mode container */
+    --toggle-bg-right: #461111;         /* dark mode container */
+    --toggle-text: #fff5bc;        /* dark mode text */
+}
